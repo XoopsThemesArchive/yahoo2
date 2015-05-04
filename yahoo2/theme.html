@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_themecss}>" />
+<!-- RMV: added module header -->
+<{$xoops_module_header}>
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+</head>
+
+<body>
+<div id="Frame">
+
+<table cellspacing="0">
+<tr>
+  <td id="headerIcon"><a href="<{$xoops_url}>/"><img src="<{$xoops_imageurl}>home.gif"><br>HOME</a></td>
+  <td id="headerIcon"><a href="<{$xoops_url}>/modules/news/"><img src="<{$xoops_imageurl}>news.gif"><br>NEWS</a></td>
+  <td id="headerIcon"><a href="<{$xoops_url}>/modules/newbb/"><img src="<{$xoops_imageurl}>forum.gif"><br>FORUM</a></td>
+  <td id="headerLogo"><img src="<{$xoops_imageurl}>logo.gif"></td>
+  <td id="headerIcon"><a href="<{$xoops_url}>/modules/mylinks/"><img src="<{$xoops_imageurl}>link.gif"><br>LINKS</a></td>
+  <td id="headerIcon"><a href="<{$xoops_url}>/modules/mydownloads/"><img src="<{$xoops_imageurl}>down.gif"><br>DOWNLOAD</a></td>
+  <td id="headerIcon"><a href="<{$xoops_url}>/modules/xoopsfaq/"><img src="<{$xoops_imageurl}>faq.gif"><br>FAQ</a></td></tr>
+</table>
+
+<div id="slogan"><{$xoops_sitename}> - <{$xoops_slogan}></div>
+
+<table cellspacing="0">
+<tr>
+<td id="centercolumn">
+
+  <div id="search">
+    <form action="<{$xoops_url}>/search.php" method="post">
+    <input type="text" name="query" class="navinput" />
+    <input type="hidden" name="action" value="results" />
+    <input class="navinputImage" type="image" src="<{$xoops_imageurl}>searchButton.gif" name="searchSubmit" />
+    </form>
+  </div>
+
+  <{if $xoops_showcblock == 1}>
+  <table cellspacing="0">
+  <tr>
+    <td id="centerCcolumn" colspan="2">
+      <{foreach item=block from=$xoops_ccblocks}>
+      <div class="blockTitle"><{$block.title}></div>
+      <div class="blockContent"><{$block.content}></div>
+      <{/foreach}>
+    </td>
+  </tr>
+
+  <tr>
+  <td id="centerLcolumn">
+    <{foreach item=block from=$xoops_clblocks}>
+    <div class="blockTitle"><{$block.title}></div>
+    <div class="blockContent"><{$block.content}></div>
+    <{/foreach}>
+  </td>
+
+  <td id="centerRcolumn">
+    <{foreach item=block from=$xoops_crblocks}>
+    <div class="blockTitle"><{$block.title}></div>
+    <div class="blockContent"><{$block.content}></div>
+    <{/foreach}>
+  </td>
+  </tr>
+
+  </table>
+  <{/if}>
+
+  <div id="content"><{$xoops_contents}></div>
+
+</td>
+
+<td id="leftcolumn">
+<{if $xoops_showlblock == 1}>
+  <{foreach item=block from=$xoops_lblocks}>
+  <div class="blockTitle"><{$block.title}></div>
+  <div class="blockContent"><{$block.content}></div>
+  <{/foreach}>
+<{/if}>
+
+<{if $xoops_showrblock == 1}>
+  <{foreach item=block from=$xoops_rblocks}>
+  <div class="blockTitleR"><{$block.title}></div>
+  <div class="blockContentR"><{$block.content}></div>
+  <{/foreach}>
+<{/if}>
+</td>
+</tr>
+</table>
+</div>
+
+<div id="footbar">
+&nbsp;&nbsp;<a href="<{$xoops_url}>/"><b>ホーム</b></a>&nbsp;&nbsp;|
+&nbsp;&nbsp;<a href="<{$xoops_url}>/modules/news/"><b>ニュース</b></a>&nbsp;&nbsp;|
+&nbsp;&nbsp;<a href="<{$xoops_url}>/modules/newbb/"><b>フォーラム</b></a>&nbsp;&nbsp;|
+&nbsp;&nbsp;<a href="<{$xoops_url}>/modules/mydownloads/"><b>ダウンロード</b></a>&nbsp;&nbsp;|
+&nbsp;&nbsp;<a href="<{$xoops_url}>/modules/mylinks"><b>リンク</b></a>&nbsp;&nbsp;|
+&nbsp;&nbsp;<a href="<{$xoops_url}>/modules/contact"><b>お問い合せ</b></a>&nbsp;&nbsp;|
+&nbsp;&nbsp;<a href="<{$xoops_url}>/modules/xoopsfaq"><b>ヘルプ</b></a>&nbsp;&nbsp;
+<p><{$xoops_footer}></p>
+</div>
+
+
+</body>
+</html>
